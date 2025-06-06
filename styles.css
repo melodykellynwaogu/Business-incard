@@ -5,7 +5,7 @@
 }
 
 body {
-    background: linear-gradient(135deg, #7F00FF 0%, #E100FF 100%);
+    background: linear-gradient(135deg, #1a1333, #232946 100%);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     min-height: 100vh;
     display: flex;
@@ -18,7 +18,7 @@ header {
     font-family: 'Segoe UI', system-ui, sans-serif;
     font-size: 2.5rem;
     color: #fff;
-    background: rgba(127, 0, 255, 0.23);
+    background: rgba(46, 29, 80, 0.40);
     box-shadow: 0 8px 24px rgba(127,0,255,0.15);
     text-align: center;
     padding: 24px 48px;
@@ -34,8 +34,8 @@ h1 {
 }
 
 h1 span {
-    color: #FE53BB;
-    text-shadow: 0 0 8px #fff2, 0 0 16px #FE53BB44;
+    color: #A6FFCB;
+    text-shadow: 0 0 8px #fff2, 0 0 16px #A6FFCB44;
     font-weight: bold;
 }
 
@@ -45,7 +45,7 @@ h1 span {
     height: 220px;
     margin: 0 auto;
     border-radius: 24px;
-    box-shadow: 0 12px 42px 0 #a600ff33, 0 2px 24px 4px #fe53bb22;
+    box-shadow: 0 12px 42px 0 #21203a88, 0 2px 24px 4px #a6ffcb33;
 }
 
 .flip-card-inner {
@@ -67,29 +67,30 @@ h1 span {
     width: 100%;
     height: 100%;
     border-radius: 24px;
-    box-shadow: 0 2px 16px rgba(127, 0, 255, 0.12);
+    box-shadow: 0 2px 16px rgba(127, 0, 255, 0.11);
     backface-visibility: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 2.2rem;
-    background: rgba(255,255,255,0.45);
+    background: rgba(37, 42, 68, 0.93); /* Pleasant dark card color */
+    /* Glassmorphism effect */
     backdrop-filter: blur(8px);
-    border: 2px solid #e100ff33;
+    border: 2px solid #a6ffcb44;
     transition: background 0.3s, border 0.3s;
 }
 
 .flip-card-front {
     z-index: 2;
-    background: rgba(255,255,255,0.7);
-    border: 2px solid #7F00FF33;
+    background: linear-gradient(125deg, #232946 60%, #A6FFCB 120%);
+    border: 2px solid #A6FFCB88;
 }
 
 .flip-card-back {
-    background: linear-gradient(120deg, #7F00FF 40%, #E100FF 100%);
-    color: #fff;
-    border: 2px solid #fff2;
+    background: linear-gradient(120deg, #232946 40%, #A6FFCB 100%);
+    color: #22223B;
+    border: 2px solid #A6FFCB66;
     transform: rotateY(180deg);
 }
 
@@ -101,40 +102,40 @@ h1 span {
 }
 
 #container h2 {
-    color: #7F00FF;
+    color: #A6FFCB;
     font-size: 2.1rem;
     font-weight: 700;
     margin-bottom: 0.25rem;
     letter-spacing: 1px;
-    text-shadow: 0 1px 8px #e100ff44;
+    text-shadow: 0 1px 8px #a6ffcb44;
 }
 
 #container p {
     font-size: 1.12rem;
-    color: #3d1857;
+    color: #fff;
     margin-bottom: 1.2rem;
     font-family: 'Pacifico', cursive, sans-serif;
-    text-shadow: 0 1px 5px #fff6;
+    text-shadow: 0 1px 5px #23294688;
 }
 
 label {
     font-size: 1.1rem;
-    color: #7F00FF;
-    background: #f3e8fd;
+    color: #232946;
+    background: #A6FFCB;
     border-radius: 14px;
     padding: 0.5rem 1.6rem;
     margin: 0.13rem 0;
     font-weight: 600;
-    box-shadow: 0 1px 6px #b47eff22;
+    box-shadow: 0 1px 6px #a6ffcb44;
     letter-spacing: 0.5px;
     transition: background 0.2s, color 0.2s, box-shadow 0.2s;
 }
 
 .flip-card-back label {
-    background: rgba(255,255,255,0.09);
-    color: #fff;
-    border: 1px solid #fff3;
-    box-shadow: 0 1px 4px #fff2;
+    background: rgba(255,255,255,0.13);
+    color: #22223B;
+    border: 1px solid #a6ffcb55;
+    box-shadow: 0 1px 4px #a6ffcb33;
 }
 
 #container label, #box label {
@@ -145,14 +146,14 @@ label {
 
 a {
     text-decoration: none;
-    color: #FE53BB;
+    color: #A6FFCB;
     font-weight: bold;
     transition: color 0.2s;
 }
 
 a:hover {
     color: #fff;
-    text-shadow: 0 0 6px #a600ff88;
+    text-shadow: 0 0 6px #a6ffcb88;
 }
 
 @media (max-width: 480px) {
